@@ -809,7 +809,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/show/show.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<p *ngFor=\"let error of error_messages\">{{error}}</p>\n<a [routerLink]=\"['/dashboard']\">Go to polls</a>\n<button (click)=\"logout()\" >Logout</button><br>\n<strong>{{poll.question}}?</strong> \n<h2>Click the vote button to choose one</h2>\n{{poll.options|json}}\n<fieldset>\n <table>\n  <tr>\n    <th>Option</th>\n    <th>Current count of votes</th>\n    <th>Action</th>\n  </tr>\n   <tr *ngFor=\"let option of poll.options | getKeys\">\n    <th>{{option[1].content}}</th>\n     <th>{{option[1].votes}}</th>\n     <th><button (click)=\"vote(option[0] )\">Vote!</button></th>\n  </tr> \n</table>\n</fieldset>\n\n\n\n\n\n\n\n"
+module.exports = "\n\n<p *ngFor=\"let error of error_messages\">{{error}}</p>\n<a [routerLink]=\"['/dashboard']\">Go to polls</a>\n<button (click)=\"logout()\" >Logout</button><br>\n<strong>{{poll.question}}?</strong> \n<h2>Click the vote button to choose one</h2>\n{{poll.options|json}}\n<fieldset>\n <table>\n  <tr>\n    <th>Option</th>\n    <th>Current count of votes</th>\n    <th>Action</th>\n  </tr>\n   <tr *ngFor=\"let option of poll.options | getKeys\">\n    <th>{{option[1].content}}</th>\n     <th>{{option[1].votes}}</th>\n     <th><button (click)=\"vote(option[0] )\">Vote!</button></th>\n  </tr> \n</table>\n</fieldset>\n\nsudo ln -s /etc/nginx/sites-available/ten /etc/nginx/sites-enabled/ten\n\n\n\n\n\n\n"
 
 /***/ }),
 
